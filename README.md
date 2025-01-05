@@ -49,31 +49,31 @@ The following libraries are used in this project:
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yourusername/sms-spam-classification.git
-Install the required libraries:
 
-bash
-Copy code
-pip install -r requirements.txt
-Place the SMSSpamCollection.csv dataset in the project directory.
+2. Install the required libraries:
 
-Run the Python script:
+```bash
 
-bash
-Copy code
-python sms_spam_classification.py
-You can also use the predict_spam function to classify new SMS messages:
+   pip install -r requirements.txt
 
-python
-Copy code
-sample_message = 'Your sample message here'
-result = predict_spam(sample_message)
-print(result)
-Results
+3.  Place the SMSSpamCollection.csv dataset in the project directory.
+
+4. Run the Python script:
+
+   bash
+   python sms_spam_classification.py
+
+5. You can also use the predict_spam function to classify new SMS messages:
+
+   ``python
+`sample_message = 'Your sample message here'
+`result = predict_spam(sample_message)
+`print(result)
+
+6. Results
 The classification models' performance is evaluated using F1 score, classification reports, and confusion matrices. The Naive Bayes model and Decision Tree model are compared for their performance on the dataset.
 
 Example Output
 For a sample spam message:
 
-csharp
-Copy code
 Gotcha! This is a SPAM message.
